@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Códigos de programación abiertos gratuitos</title>
+  <meta name="description" content="Explora, aprende y comparte código de programación. Encuentra ejemplos prácticos, fragmentos reutilizables y soluciones eficientes en múltiples lenguajes como Python, JavaScript, C++, Java y más. Ideal para estudiantes, desarrolladores y entusiastas.">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url('https://plus.unsplash.com/premium_photo-1661882403999-46081e67c401?q=80&w=829&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-right: 60px;
+    }
+
+    .login-container {
+      background: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(10px);
+      color: #fff;
+      padding: 40px 30px;
+      border-radius: 16px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      width: 320px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .login-container h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .login-container label {
+      display: block;
+      margin-top: 15px;
+      font-size: 14px;
+    }
+
+    .login-container input[type="email"],
+    .login-container input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      border-radius: 8px;
+      color: #fff;
+      outline: none;
+    }
+
+    .login-container input::placeholder {
+      color: #ccc;
+    }
+
+    .login-container input[type="submit"] {
+      width: 100%;
+      background-color: #00c3ff;
+      color: #000;
+      padding: 10px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .login-container input[type="submit"]:hover {
+      background-color: #00a6d6;
+    }
+
+    .login-container p {
+      text-align: center;
+      margin-top: 15px;
+    }
+
+    .login-container a {
+      color: #00c3ff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-container">
+    <h2>Iniciar Sesión</h2>
+    <form action="procesar_login.php" method="post">
+      <label for="email">Correo electrónico:</label>
+      <input type="email" id="email" name="email" placeholder="example111@gmail.com" required>
+
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" name="password" placeholder="••••••••" required>
+
+      <input type="submit" value="Entrar">
+
+      <p>¿No tienes una cuenta? <a href="registro.html">Regístrate</a></p>
+      <p><a href="#">¿Se te olvidó la contraseña?</a></p>
+    </form>
+  </div>
+
+</body>
+</html>
